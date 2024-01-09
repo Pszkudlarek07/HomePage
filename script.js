@@ -1,3 +1,3 @@
 "use strict";
 
-console.log("hello");
+let anonymousNumber = Math.trunc(Math.random() * 25) + 1;
