@@ -1,1 +1,1 @@
-# Simple-JS-Games
+Dice Game
