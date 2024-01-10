@@ -1,7 +1,6 @@
 "use strict";
 
 let anonymousNumber = Math.trunc(Math.random() * 25) + 1;
-
 let score = 25;
 let highscore = 0;
 let gradient1 =
@@ -13,6 +12,7 @@ let displayMessage = function (message) {
   document.querySelector(".message").textContent = message;
 };
 
+// check button
 document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
   console.log(guess, typeof guess);
@@ -51,6 +51,7 @@ document.querySelector(".check").addEventListener("click", function () {
   }
 });
 
+// Reset button
 document.querySelector(".again").addEventListener("click", function () {
   anonymousNumber = Math.trunc(Math.random() * 25) + 1;
   score = 25;
@@ -59,4 +60,31 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector(".guess").value = "";
   document.querySelector(".number").textContent = "?";
   document.querySelector("body").style.backgroundImage = `${gradient2}`;
+  document.querySelector("h1").textContent = "Guess my number";
+});
+
+// Rules button
+
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+const btnCloseModal = document.querySelector(".close-modal");
+const btnsOpenModal = document.querySelector(".rules");
+
+const openModal = function () {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+};
+const closeModal = function () {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+};
+
+btnsOpenModal.addEventListener("click", openModal);
+btnCloseModal.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+    closeModal();
+  }
 });
