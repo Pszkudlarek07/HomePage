@@ -16,7 +16,6 @@ body {
     rgba(169, 241, 223, 1),
     rgba(255, 187, 187, 1)
   );
-  /* background-color: #60b347; */
 }
 
 /* LAYOUT */
@@ -97,7 +96,7 @@ h1 {
 
 .guess {
   background: #dee2e6;
-  border: 2px solid #868e96;
+  border: 2px solid #74c0fc;
   font-family: inherit;
   color: #e03131;
   font-size: 8rem;
@@ -119,7 +118,7 @@ h1 {
   font-family: inherit;
   padding: 1.5rem 1.5rem;
   cursor: pointer;
-  border: 1px solid #868e96;
+  border: 2px solid #74c0fc;
 }
 
 .button:hover {
@@ -129,6 +128,7 @@ h1 {
 .message {
   margin-bottom: 8rem;
   height: 4rem;
+  font-size: 3rem;
 }
 
 .label-score {
@@ -137,4 +137,5 @@ h1 {
 
 .check {
   border-radius: 5%;
+  margin-bottom: 4rem;
 }
