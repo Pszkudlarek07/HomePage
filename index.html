@@ -20,6 +20,33 @@
       <p class="Number between">(Between 1 and 25)</p>
       <button class="button again">Try again🔁</button>
       <button class="button rules">Rules📜</button>
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <p class="game-instruction">Game instructions</p>
+        <ol>
+          <li>
+            The game involves guessing a mysterious number using the fewest
+            possible attempts.
+          </li>
+
+          <li>
+            Choose a number from 1 to 25 and enter it in the empty field on the
+            left.
+          </li>
+          <li>
+            If the guessed number is too large or too small, a message will
+            appear instructing you to choose another number.
+          </li>
+          <li>
+            Upon correctly guessing the mysterious number, a winning message
+            will appear. If the result is the best so far, it will be recorded
+            in the "highscore" field.
+          </li>
+          <li>To reset the attempt, press "Try again."</li>
+          <li>Have fun! 😀</li>
+        </ol>
+      </div>
+      <div class="overlay hidden"></div>
       <div class="number">
         ?
         <div class="inner"></div>
