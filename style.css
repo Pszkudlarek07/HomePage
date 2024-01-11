@@ -72,13 +72,13 @@ h1 {
   border: 2px solid #ff8787;
 }
 
-.between {
+/* .between {
   display: none;
   font-size: 1.4rem;
   position: absolute;
   top: 2rem;
   right: 2rem;
-}
+} */
 
 .again {
   position: absolute;
