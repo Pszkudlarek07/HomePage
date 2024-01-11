@@ -1,1 +1,1 @@
-This branch is commited Guess My Number game. Try it ! :)
+This branch is commited to Guess My Number game. Try it ! :)
