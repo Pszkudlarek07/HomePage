@@ -1,8 +1,5 @@
 "use strict";
 
-
-
-
 let anonymousNumber = Math.trunc(Math.random() * 25) + 1;
 let score = 25;
 let highscore = 0;
@@ -15,24 +12,21 @@ let displayMessage = function (message) {
   document.querySelector(".message").textContent = message;
 };
 
-
-// check button 
+// check button
 document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
   console.log(guess, typeof guess);
 
-  
   // If there is no input
   if (!guess) {
     displayMessage("❌ No number! ❌");
 
-    
     // When player wins
   } else if (guess === anonymousNumber) {
     displayMessage("");
     document.querySelector(".number").textContent = anonymousNumber;
     document.querySelector("body").style.backgroundImage = `${gradient1}`;
-    document.querySelector("h1").textContent = "🎊 Correct Number! You won 🎊";
+    document.querySelector("h1").textContent = "🎊Correct Number! You won🎊";
     document.querySelector("h1").style.fontSize = "6rem";
 
     if (score > highscore) {
@@ -40,7 +34,6 @@ document.querySelector(".check").addEventListener("click", function () {
       document.querySelector(".highscore").textContent = highscore;
     }
 
-    
     // When guess is wrong
   } else if (guess !== anonymousNumber) {
     if (score > 1) {
@@ -58,7 +51,6 @@ document.querySelector(".check").addEventListener("click", function () {
   }
 });
 
-
 // Reset button
 document.querySelector(".again").addEventListener("click", function () {
   anonymousNumber = Math.trunc(Math.random() * 25) + 1;
@@ -70,7 +62,6 @@ document.querySelector(".again").addEventListener("click", function () {
   document.querySelector("body").style.backgroundImage = `${gradient2}`;
   document.querySelector("h1").textContent = "Guess my number";
 });
-
 
 // Rules button
 const modal = document.querySelector(".modal");
