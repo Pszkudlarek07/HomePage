@@ -3,16 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Dice Game</title>
   </head>
   <body>
-    <h1>Dice Game</h1>
-    <img src="dice-img/dice-1.png" alt="dice cube" />
-    <button class="button button-restart">🕹️ Restart Game</button>
-    <button class="button button-throw">🎲 Throw the dice</button>
-    <button class="button button-keep">🛒 Keep</button>
-    <button class="button button-rules">📜 Rules</button>
+    <h1 class="h1-class">DICE GAME</h1>
+    <div class="postion-class">
+      <section class="gamer gamer--1 gamer--active">
+        <h2 class="gamer-name" id="name--0">PLAYER 1 📱</h2>
+        <p class="score" id="score--0">7</p>
+        <div class="extr-box">
+          <div class="current">
+            <p class="current-label">CURRENT SCORE</p>
+            <p class="current-score" id="current--0">0</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gamer gamer--2">
+        <h2 class="gamer-name" id="name--1">PLAYER 2 📱</h2>
+        <p class="score" id="score--1">7</p>
+        <div class="extr-box">
+          <div class="current current-second">
+            <p class="current-label">CURRENT SCORE</p>
+            <p class="current-score" id="current--1">0</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="img-div-cls">
+      <img src="dice-img/dice-1.png" alt="dice cube" class="img-cls" />
+    </div>
+    <button class="button button--restart">🕹️ Restart game</button>
+    <button class="button button--throw">🎲 Throw</button>
+    <button class="button button--keep">🛒 Keep</button>
+    <button class="button button--rules">📜 Rules</button>
 
     <script src="script.js"></script>
   </body>

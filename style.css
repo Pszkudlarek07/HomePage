@@ -1,0 +1,150 @@
+/* main  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  background-image: linear-gradient(to top, #fc354c, #0abfbc);
+}
+
+.img-cls {
+  height: 20rem;
+  position: absolute;
+  top: 70%;
+  right: 65%;
+  padding: 3.5rem;
+  background-color: #c5f6fa;
+  border-radius: 5rem;
+  box-shadow: 0.8rem 0.8rem rgb(0, 0, 0, 0.4);
+}
+
+.h1-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  font-size: 8rem;
+  letter-spacing: 0.5rem;
+}
+.postion-class {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gamer--1 {
+  background-color: #c5f6fa;
+  width: 40%;
+  height: 40vh;
+  border-radius: 5rem;
+  margin-bottom: 1rem;
+  margin-right: 30%;
+}
+
+.gamer--2 {
+  background-color: #ffc9c9;
+  width: 40%;
+  height: 40vh;
+  border-radius: 5rem;
+  margin-left: 30%;
+}
+
+.gamer-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 5rem;
+  letter-spacing: 0.2rem;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.current {
+  background-color: #66d9e8;
+  box-shadow: 0.8rem 0.8rem rgb(0, 0, 0, 0.4);
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 2rem;
+  height: 10rem;
+}
+
+.extr-box {
+  display: flex;
+  justify-content: center;
+}
+.current-label {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin-top: 1rem;
+}
+
+.current-second {
+  background-color: #ffa8a8;
+}
+
+.current-score {
+  font-size: 5rem;
+}
+
+.button {
+  height: 6rem;
+  width: 25rem;
+  border-radius: 2rem;
+  background-color: #c3fae8;
+  border: none;
+  font-size: 2.2rem;
+  font-family: "Chakra Petch";
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+.button--restart {
+  position: absolute;
+  top: 17%;
+  right: 25%;
+  box-shadow: 0.8rem 0.8rem rgb(0, 0, 0, 0.4);
+}
+
+.button--rules {
+  position: absolute;
+  top: 27%;
+  right: 25%;
+  box-shadow: 0.8rem 0.8rem rgb(0, 0, 0, 0.4);
+}
+
+.button--throw {
+  position: absolute;
+  top: 37%;
+  right: 25%;
+  box-shadow: 0.8rem 0.8rem rgb(0, 0, 0, 0.4);
+}
+
+.button--keep {
+  position: absolute;
+  top: 47%;
+  right: 25%;
+  box-shadow: 0.8rem 0.8rem rgb(0, 0, 0, 0.4);
+}
