@@ -70,6 +70,7 @@ h1 {
   transform: translate(-50%, 75%);
   border-radius: 50%;
   border: 2px solid #ff8787;
+  box-shadow: 0.8rem 0.8rem rgb(0, 0, 0, 0.3);
 }
 
 .between {
@@ -107,6 +108,7 @@ h1 {
   display: block;
   margin-bottom: 2rem;
   border-radius: 5%;
+  box-shadow: 0.5rem 0.5rem rgb(0, 0, 0, 0.3);
 }
 
 .button {
@@ -119,6 +121,7 @@ h1 {
   padding: 1.5rem 1.5rem;
   cursor: pointer;
   border: 2px solid #74c0fc;
+  box-shadow: 0.5rem 0.5rem rgb(0, 0, 0, 0.3);
 }
 
 .button:hover {
@@ -138,6 +141,7 @@ h1 {
 .check {
   border-radius: 5%;
   margin-bottom: 4rem;
+  box-shadow: 0.5rem 0.5rem rgb(0, 0, 0, 0.3);
 }
 
 .hidden {
