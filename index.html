@@ -13,10 +13,36 @@
     <title>Dice Game</title>
   </head>
   <body>
+    <div class="modal hidden-modal">
+      <h2 class="rules-class">Dice Game rules!</h2>
+      <button class="close-modal">❌</button>
+      <p class="dg-rules">
+        Each turn, a player rolls a dice until eaither a 1 is rolled or the
+        player decides to "keep":
+      </p>
+      <ul class="ul-class">
+        <li>
+          If the player rolls a 1, they score nothing and it becomes the next
+          player's turn.
+        </li>
+        <li>
+          If the player rolls any other number, it is added to their turn total
+          and the player's turn continues.
+        </li>
+        <li>
+          If a player chooses to "keep", their turn total is added to their
+          score, and it becomes the next player's turn.
+        </li>
+      </ul>
+      <p class="dg-rules">The first player to score 100 or more points wins.</p>
+    </div>
+    <div class="overlay hidden-overlay"></div>
     <h1 class="h1-class">DICE GAME</h1>
     <div class="postion-class">
-      <section class="gamer gamer--1 gamer--active">
-        <h2 class="gamer-name" id="name--0">PLAYER 1 📱</h2>
+      <section class="gamer gamer--0 gamer--active">
+        <h2 class="gamer-name" id="name--0">
+          PLAYER 1 📱 <span class="spn-class1 hidden">🏆WINNER🏆</span>
+        </h2>
         <p class="score" id="score--0">7</p>
         <div class="extr-box">
           <div class="current">
@@ -26,8 +52,10 @@
         </div>
       </section>
 
-      <section class="gamer gamer--2">
-        <h2 class="gamer-name" id="name--1">PLAYER 2 📱</h2>
+      <section class="gamer gamer--1">
+        <h2 class="gamer-name" id="name--1">
+          PLAYER 2 📱<span class="spn-class2 hidden">🏆WINNER🏆</span>
+        </h2>
         <p class="score" id="score--1">7</p>
         <div class="extr-box">
           <div class="current current-second">
