@@ -1,17 +1,20 @@
 "use strict";
 
 // Selecting elements
-const gamer0Element = document.querySelector(".gamer--1");
-const gamer1Element = document.querySelector(".gamer--2");
+const gamer0Element = document.querySelector(".gamer--0");
+const gamer1Element = document.querySelector(".gamer--1");
 const score0Element = document.getElementById("score--0");
 const score1Element = document.getElementById("score--1");
 const current0Element = document.getElementById("current--0");
 const current1Element = document.getElementById("current--1");
 const diceElement = document.querySelector(".img-cls");
-const buttonNew = document.querySelector(".button--restart");
+const buttonRestart = document.querySelector(".button--restart");
 const buttonThrow = document.querySelector(".button--throw");
 const buttonKeep = document.querySelector(".button--keep");
 const buttonRules = document.querySelector(".button--rules");
+const gamerName = document.querySelector(".gamer-name");
+const winnerMessage1 = document.querySelector(".spn-class1");
+const winnerMessage2 = document.querySelector(".spn-class2");
 
 let results, currentScore, activePlayer, playing;
 
@@ -49,7 +52,6 @@ buttonThrow.addEventListener("click", function () {
   if (playing) {
     // 1. Generating a random dice roll
     const dice = Math.trunc(Math.random() * 6) + 1;
-    console.log(dice);
 
     // 2. Display dice
     diceElement.classList.remove("hidden");
@@ -70,6 +72,64 @@ buttonThrow.addEventListener("click", function () {
 
 // Button keep funcioniality
 
+buttonKeep.addEventListener("click", function () {
+  if (playing) {
+    // 1. Add current score to active player's score
+    results[activePlayer] += currentScore;
+    // scores[1] = scores[1] + currentScore
+
+    document.getElementById(`score--${activePlayer}`).textContent =
+      results[activePlayer];
+
+    // 2. Check if player's score is >= 100
+    if (results[activePlayer] >= 10) {
+      // Finish Game
+      playing = false;
+      diceElement.classList.add("hidden");
+
+      document
+        .querySelector(`.gamer--${activePlayer}`)
+        .classList.add("gamer--winner");
+
+      document
+        .querySelector(`.gamer--${activePlayer}`)
+        .classList.remove("hidden");
+
+      document
+        .querySelector(`.gamer--${activePlayer}`)
+        .classList.remove("gamer--active");
+    } else {
+      // switch to the next player
+      switchGamer();
+    }
+  }
+});
+
 // Button rules funcioniality
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+const buttonCloseModal = document.querySelector(".close-modal");
+const buttonOpenModal = document.querySelector(".button--rules");
+
+const openModal = function () {
+  modal.classList.remove("hidden-modal");
+  overlay.classList.remove("hidden-overlay");
+};
+
+const closeModal = function () {
+  modal.classList.add("hidden-modal");
+  overlay.classList.add("hidden-overlay");
+};
+
+buttonOpenModal.addEventListener("click", openModal);
+buttonCloseModal.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+    closeModal();
+  }
+});
 
 // Button restart funcioniality
+buttonRestart.addEventListener("click", init);
