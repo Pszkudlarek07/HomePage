@@ -28,6 +28,10 @@ body {
   box-shadow: 0.8rem 0.8rem rgb(0, 0, 0, 0.4);
 }
 
+.hidden {
+  display: none;
+}
+
 .h1-class {
   display: flex;
   justify-content: center;
@@ -147,4 +151,15 @@ body {
   top: 47%;
   right: 25%;
   box-shadow: 0.8rem 0.8rem rgb(0, 0, 0, 0.4);
+}
+
+.gamer--active {
+  background-image: linear-gradient(to bottom right, yellow, deeppink, #006699);
+  opacity: 0.8;
+  border: 3px solid #c0eb75;
+}
+
+.gamer--winner {
+  font-weight: 800;
+  background-color: green;
 }
