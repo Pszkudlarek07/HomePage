@@ -47,7 +47,7 @@ body {
   align-items: center;
 }
 
-.gamer--1 {
+.gamer--0 {
   background-color: #c5f6fa;
   width: 40%;
   height: 40vh;
@@ -56,7 +56,7 @@ body {
   margin-right: 30%;
 }
 
-.gamer--2 {
+.gamer--1 {
   background-color: #ffc9c9;
   width: 40%;
   height: 40vh;
@@ -161,5 +161,71 @@ body {
 
 .gamer--winner {
   font-weight: 800;
-  background-color: green;
+  background-image: linear-gradient(to right, green, blue);
+  z-index: 15;
+  width: 50%;
+}
+
+.modal {
+  position: absolute;
+  background-color: #d3f9d8;
+  width: 75%;
+  height: 50vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  padding: 5rem;
+  border-radius: 2rem;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.close-modal {
+  position: absolute;
+  top: 3%;
+  right: 1%;
+  font-size: 4rem;
+  border: none;
+  background-color: #d3f9d8;
+}
+
+.hidden-modal {
+  display: none;
+}
+.hidden-overlay {
+  display: none;
+}
+
+.rules-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.dg-rules {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.ul-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
 }
