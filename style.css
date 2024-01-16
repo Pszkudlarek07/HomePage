@@ -86,7 +86,7 @@ body {
 .current {
   background-color: #66d9e8;
   box-shadow: 0.8rem 0.8rem rgb(0, 0, 0, 0.4);
-  width: 35%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,29 +127,29 @@ body {
 
 .button--restart {
   position: absolute;
-  top: 17%;
-  right: 25%;
+  top: 5%;
+  right: 5%;
   box-shadow: 0.8rem 0.8rem rgb(0, 0, 0, 0.4);
 }
 
 .button--rules {
   position: absolute;
-  top: 27%;
-  right: 25%;
+  top: 15%;
+  right: 5%;
   box-shadow: 0.8rem 0.8rem rgb(0, 0, 0, 0.4);
 }
 
 .button--throw {
   position: absolute;
-  top: 37%;
-  right: 25%;
+  top: 25%;
+  right: 5%;
   box-shadow: 0.8rem 0.8rem rgb(0, 0, 0, 0.4);
 }
 
 .button--keep {
   position: absolute;
-  top: 47%;
-  right: 25%;
+  top: 35%;
+  right: 5%;
   box-shadow: 0.8rem 0.8rem rgb(0, 0, 0, 0.4);
 }
 
