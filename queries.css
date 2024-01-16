@@ -1,0 +1,94 @@
+/* *****************
+BELOW 1664px | 1650px/16px=103.125| 104 * 16 = 1664px 
+***************** */
+@media (max-width: 104em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* *****************
+BELOW 1376px | 1366px/16px=85.375| 86 * 16 = 1376px 
+***************** */
+
+@media (max-width: 86em) {
+  html {
+    font-size: 45%;
+  }
+}
+
+/* *****************
+BELOW 1280px | 1276px/16px=79.75| 80 * 16 = 1280px 
+***************** */
+
+@media (max-width: 80em) {
+  html {
+    font-size: 40%;
+  }
+  .gamer--1,
+  .gamer--0 {
+    width: 40%;
+    height: 35vh;
+  }
+}
+
+/* *****************
+BELOW 1104px | 1100px/16px=68.75| 69 * 16 = 1104px 
+***************** */
+
+@media (max-width: 69em) {
+  html {
+    font-size: 38%;
+  }
+  .h1-class {
+    font-size: 7rem;
+    justify-content: flex-start;
+    margin-left: 10rem;
+  }
+  .spn-class1,
+  .spn-class2 {
+    font-size: 3rem;
+  }
+}
+
+/* *****************
+BELOW 800px  | 800px/16px=50| 50 * 16 = 800px 
+***************** */
+
+@media (max-width: 50em) {
+  html {
+    font-size: 35%;
+  }
+  .current-label {
+    font-size: 1.6rem;
+  }
+}
+
+/* *****************
+BELOW 656px  | 650px/16px=40.625| 41 * 16 = 656px 
+***************** */
+
+@media (max-width: 41em) {
+  html {
+    font-size: 32%;
+  }
+  .gamer--1,
+  .gamer--0 {
+    width: 50%;
+    height: 35vh;
+  }
+}
+
+/* *****************
+BELOW 464px  | 450px/16px=28.125| 29 * 16 = 464px 
+***************** */
+
+@media (max-width: 29em) {
+  html {
+    font-size: 30%;
+  }
+  .h1-class {
+    margin-left: 2rem;
+    font-size: 5rem;
+  }
+}
