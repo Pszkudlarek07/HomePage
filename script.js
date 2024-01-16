@@ -34,6 +34,8 @@ const init = function () {
   gamer1Element.classList.remove("gamer--winner");
   gamer0Element.classList.add("gamer--active");
   gamer1Element.classList.remove("gamer--active");
+  winnerMessage1.classList.add("hidden");
+  winnerMessage2.classList.add("hidden");
 };
 init();
 
@@ -90,6 +92,12 @@ buttonKeep.addEventListener("click", function () {
       document
         .querySelector(`.gamer--${activePlayer}`)
         .classList.add("gamer--winner");
+
+      if (gamer0Element.classList.contains("gamer--winner")) {
+        winnerMessage1.classList.remove("hidden");
+      } else if (gamer1Element.classList.contains("gamer--winner")) {
+        winnerMessage2.classList.remove("hidden");
+      }
 
       document
         .querySelector(`.gamer--${activePlayer}`)
