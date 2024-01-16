@@ -77,6 +77,9 @@ BELOW 656px  | 650px/16px=40.625| 41 * 16 = 656px
     width: 50%;
     height: 35vh;
   }
+  .button {
+    width: 20rem;
+  }
 }
 
 /* *****************
@@ -90,5 +93,8 @@ BELOW 464px  | 450px/16px=28.125| 29 * 16 = 464px
   .h1-class {
     margin-left: 2rem;
     font-size: 5rem;
+  }
+  .current {
+    width: 50%;
   }
 }
