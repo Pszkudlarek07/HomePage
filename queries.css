@@ -5,6 +5,9 @@ BELOW 1664px | 1650px/16px=103.125| 104 * 16 = 1664px
   html {
     font-size: 50%;
   }
+  body {
+    padding: 1.5rem;
+  }
 }
 
 /* *****************
@@ -29,6 +32,9 @@ BELOW 1280px | 1276px/16px=79.75| 80 * 16 = 1280px
   .gamer--0 {
     width: 40%;
     height: 35vh;
+  }
+  .img-cls {
+    height: 15rem;
   }
 }
 
@@ -62,6 +68,9 @@ BELOW 800px  | 800px/16px=50| 50 * 16 = 800px
   .current-label {
     font-size: 1.6rem;
   }
+  .gamer--0 {
+    margin-right: 25rem;
+  }
 }
 
 /* *****************
@@ -72,13 +81,21 @@ BELOW 656px  | 650px/16px=40.625| 41 * 16 = 656px
   html {
     font-size: 32%;
   }
+
   .gamer--1,
   .gamer--0 {
-    width: 50%;
+    width: 45%;
     height: 35vh;
   }
   .button {
     width: 20rem;
+    font-size: 2.5rem;
+  }
+  .img-cls {
+    height: 12rem;
+  }
+  .gamer-name {
+    font-size: 3.5rem;
   }
 }
 
