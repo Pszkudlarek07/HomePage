@@ -2,7 +2,8 @@
 
 ![image](https://github.com/Pszkudlarek07/Simple-JS-Games-during-work-/assets/143716328/1e198434-d8c8-4960-9bd6-be94e90cf23b)
 
-![image](https://github.com/Pszkudlarek07/Simple-JS-Games-during-work-/assets/143716328/afc6f389-810c-47a7-898c-a5638e490f80)
+![image](https://github.com/Pszkudlarek07/Simple-JS-Games-during-work-/assets/143716328/60174800-0dc0-476d-af3d-576b73ccaa69)
+
 
 
 ![image](https://github.com/Pszkudlarek07/Simple-JS-Games-during-work-/assets/143716328/a3d55695-d294-4e54-9c03-4736caa9d04d)
