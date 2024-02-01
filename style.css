@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.extr-class {
+  font-family: "Tektur";
+  letter-spacing: 0.2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url(img-folder/backgroundimage.jpg);
+  padding: 1rem;
+}
+
+.btn {
+  letter-spacing: 0.2rem;
+}
+.h1-cls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  color: white;
+  letter-spacing: 2px;
+}
+
+#img-cls-info {
+  padding: 0;
+}
+
+#logos-cnt-class {
+  width: 6rem;
+}
+
+#btn-style {
+  background: linear-gradient(to top, #0f0c29, #302b63, #24243e);
+  border: 1px solid #5f3dc4;
+}
+#btn-style:hover,
+#btn-style:hover {
+  background: linear-gradient(to right, #41295a, #2f0743);
+}
+
+.mrgn-cls {
+  margin-bottom: 5rem;
+}
+.style-class {
+  color: white;
+}
+
+.col-btn {
+  margin-bottom: 10rem;
+}
+
+/* **************************** */
