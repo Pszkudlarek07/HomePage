@@ -41,7 +41,7 @@ html {
   border: 1px solid #5f3dc4;
 }
 #btn-style:hover,
-#btn-style:hover {
+#btn-style:active {
   background: linear-gradient(to right, #41295a, #2f0743);
 }
 
@@ -54,6 +54,41 @@ html {
 
 .col-btn {
   margin-bottom: 10rem;
+}
+
+#btn-ftr,
+#phone-nmbr {
+  background: linear-gradient(to top, #0f0c29, #302b63, #24243e);
+  border: 1px solid #5f3dc4;
+}
+
+#btn-ftr:hover,
+#btn-ftr:active {
+  background: linear-gradient(to right, #41295a, #2f0743);
+}
+#phone-nmbr:hover,
+#phone-nmbr:active {
+  background: linear-gradient(to right, #41295a, #2f0743);
+}
+#in-id {
+  background: linear-gradient(to top, #0f0c29, #302b63, #24243e);
+  border: none;
+  border-radius: 20%;
+}
+#gt-id {
+  border-radius: 40%;
+}
+
+#footer-class {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url(img-folder/background-footer.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+}
+#ftr-txt {
+  color: white;
 }
 
 /* **************************** */
