@@ -9,12 +9,13 @@ html {
 }
 
 header {
-  height: 120vh;
   padding: 1rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(img-folder/img-header.jpg);
   background-position: center;
   background-size: cover;
+  overflow: hidden;
+  height: 140vh;
 }
 
 .extr-class {
