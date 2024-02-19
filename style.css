@@ -8,12 +8,22 @@ html {
   font-size: 62.5%;
 }
 
+header {
+  height: 120vh;
+  padding: 1rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(img-folder/img-header.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
 .extr-class {
   font-family: "Tektur";
   letter-spacing: 0.2rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
     url(img-folder/backgroundimage.jpg);
   padding: 1rem;
+  padding-top: 0;
 }
 
 .btn {
