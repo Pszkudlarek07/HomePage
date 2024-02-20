@@ -8,9 +8,15 @@ html {
   font-size: 62.5%;
 }
 
+.special-elite-regular {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 header {
   padding: 1rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
     url(img-folder/img-header.jpg);
   background-position: center;
   background-size: cover;
@@ -18,11 +24,28 @@ header {
   height: 140vh;
 }
 
+.main-nav-list {
+  list-style-type: none;
+  letter-spacing: 0.3rem;
+  color: #2ee65c;
+  box-shadow: 5px 5px 5px #a9a499;
+  border-radius: 5rem;
+}
+
+.anchor-cls {
+  color: #2ee65c;
+  text-decoration: none;
+}
+.anchor-cls:hover,
+.anchor-cls:active {
+  color: #37b24d;
+  text-decoration: none;
+}
+
 .extr-class {
-  font-family: "Tektur";
   letter-spacing: 0.2rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-    url(img-folder/backgroundimage.jpg);
+    url(img-folder/background-image.jpg);
   padding: 1rem;
   padding-top: 0;
 }
@@ -48,12 +71,15 @@ header {
 }
 
 #btn-style {
-  background: linear-gradient(to top, #0f0c29, #302b63, #24243e);
-  border: 1px solid #5f3dc4;
+  background: linear-gradient(to top, #9e927b, #b1a58b);
+  /* border: 1px solid #ffe8cc; */
+  border: none;
+  color: white;
+  letter-spacing: 0.3rem;
 }
 #btn-style:hover,
 #btn-style:active {
-  background: linear-gradient(to right, #41295a, #2f0743);
+  background: linear-gradient(to top, #806042, #e5dcc6);
 }
 
 .mrgn-cls {
@@ -69,20 +95,21 @@ header {
 
 #btn-ftr,
 #phone-nmbr {
-  background: linear-gradient(to top, #0f0c29, #302b63, #24243e);
-  border: 1px solid #5f3dc4;
+  background: linear-gradient(to top, #9e927b, #b1a58b);
+  /* border: 1px solid #ffe8cc; */
+  color: white;
 }
 
 #btn-ftr:hover,
 #btn-ftr:active {
-  background: linear-gradient(to right, #41295a, #2f0743);
+  background: linear-gradient(to top, #806042, #e5dcc6);
 }
 #phone-nmbr:hover,
 #phone-nmbr:active {
-  background: linear-gradient(to right, #41295a, #2f0743);
+  background: linear-gradient(to top, #806042, #e5dcc6);
 }
 #in-id {
-  background: linear-gradient(to top, #0f0c29, #302b63, #24243e);
+  background: linear-gradient(to top, #9e927b, #b1a58b);
   border: none;
   border-radius: 20%;
 }
@@ -92,7 +119,7 @@ header {
 
 #footer-class {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
-    url(img-folder/background-footer.jpg);
+    url(img-folder/img-old-tv-effect.jpg);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;

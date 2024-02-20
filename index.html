@@ -10,12 +10,9 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Tektur:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -34,12 +31,23 @@
       href="favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="site.webmanifest" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
+    
     <title>Homepage</title>
   </head>
-  <body>
-    <header> </header>
+  <body class='special-elite-regular'>
+    <header> 
+      <nav class="main-nav">
+        <ul class="main-nav-list d-flex justify-content-end fs-1 m-5  fw-semibold fst-italic ">
+          <li class='m-4 li-cls'><a href="#about-me" class="anchor-cls">ABOUT ME</a></li>
+          <li class='m-4 li-cls'> <a href="#projects" class="anchor-cls">PROJECTS</a></li>
+          <li class='m-4'><a href="#contact" class="anchor-cls">CONTACT</a></li>
+        </ul>
+      </nav>
+      
+    </header>  
     <div class="extr-class">
-      <h1 class="h1-cls fs-1 mb-3">Visit one of mine pages</h1>
+      <h1 class="h1-cls fs-1 mb-3" id="projects">Visit one of mine pages</h1>
       <div class="container text-center">
         <!-- first website ***********************************-->
         <div
@@ -57,7 +65,7 @@
               class="btn btn-dark btn-lg fs-2 mb-3"
               id="btn-style"
             >
-              Hair salon website 🪮
+              Hair salon  🪮
             </a>
             <div class="container text-center style-class fs-4">
               Used technology:
@@ -214,7 +222,7 @@
               class="btn btn-dark btn-lg fs-2 mb-3"
               id="btn-style"
             >
-              Guess My Number Game❓
+              Guess My Number ❓
             </a>
             <div class="container text-center style-class fs-4">
               Used technology:
@@ -252,7 +260,7 @@
           </div>
         </div>
       </div>
-      <footer >
+      <footer id="contact">
         <div class="card text-center" id="footer-class">
           <div class="card-body">
             <h5 class="card-title fs-2" id="ftr-txt"> Say hello or check my other activities  </h5>
