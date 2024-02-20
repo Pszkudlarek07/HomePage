@@ -1,0 +1,9 @@
+@media (max-width: 60em) {
+  /* MOBILE NAVIGATION */
+  /* *****************
+BELOW 960px  | 950px/16px=59.375| 60 * 16 = 960px 
+***************** */
+  .main-nav {
+    display: none;
+  }
+}

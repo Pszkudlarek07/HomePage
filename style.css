@@ -28,7 +28,7 @@ header {
   list-style-type: none;
   letter-spacing: 0.3rem;
   color: #2ee65c;
-  box-shadow: 5px 5px 5px #a9a499;
+  box-shadow: 3px 3px 3px #8ce99a;
   border-radius: 5rem;
 }
 
@@ -60,6 +60,23 @@ header {
   padding-top: 3rem;
   color: white;
   letter-spacing: 2px;
+}
+
+.about-class {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(img-folder/img-typewriter-two.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 1rem;
+  height: 120vh;
+}
+.col {
+  color: white;
+  letter-spacing: 0.2rem;
+}
+#img-about-me {
+  height: 35rem;
+  width: 55rem;
 }
 
 #img-cls-info {
@@ -130,3 +147,33 @@ header {
 }
 
 /* **************************** */
+
+#container {
+  text-align: center;
+}
+
+#text {
+  display: inline-block;
+  vertical-align: middle;
+  color: #2ee65c;
+  letter-spacing: 2px;
+}
+
+#cursor {
+  display: inline-block;
+  vertical-align: middle;
+  width: 3px;
+  height: 5rem;
+  background-color: #2ee65c;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #2ee65c;
+  }
+}
