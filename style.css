@@ -6,6 +6,10 @@
 
 html {
   font-size: 62.5%;
+  /* scroll-behavior: smooth; */
+}
+body {
+  overflow-x: hidden;
 }
 
 .special-elite-regular {
@@ -21,7 +25,58 @@ header {
   background-position: center;
   background-size: cover;
   overflow: hidden;
-  height: 140vh;
+  height: 130vh;
+  position: relative;
+}
+
+/* Mobile navigation */
+
+.btn-mobile-nav {
+  position: absolute;
+  right: 3%;
+  top: 15%;
+  transform: translate(-50%, 0);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #2ee65c;
+  display: none;
+}
+.icon-mobile-nav {
+  font-size: 5rem;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+#arrow-entity {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, 0);
+}
+
+#btn-entity {
+  border: none;
+  width: 15rem;
+  height: 5rem;
+  border-radius: 1rem;
+  font-size: 4rem;
+  color: black;
+  background-color: #2ee65c;
+  box-shadow: 8px 8px 8px #8ce99a;
+}
+
+#btn-entity:hover,
+#btn-entity:active {
+  background-color: #37b24d;
+}
+
+#circle-down {
+  color: #2ee65c;
+  font-size: 3rem;
+  width: 3rem;
 }
 
 .main-nav-list {
@@ -68,11 +123,12 @@ header {
   background-position: center;
   background-size: cover;
   padding: 1rem;
-  height: 120vh;
+  height: fit-content;
 }
 .col {
   color: white;
   letter-spacing: 0.2rem;
+  text-align: justify;
 }
 #img-about-me {
   height: 35rem;
@@ -88,10 +144,11 @@ header {
 }
 
 #btn-style {
-  background: linear-gradient(to top, #9e927b, #b1a58b);
+  background: linear-gradient(to bottom, #806042, #ffd8a8);
   /* border: 1px solid #ffe8cc; */
   border: none;
-  color: white;
+  color: #343a40;
+  font-weight: bold;
   letter-spacing: 0.3rem;
 }
 #btn-style:hover,
@@ -112,9 +169,10 @@ header {
 
 #btn-ftr,
 #phone-nmbr {
-  background: linear-gradient(to top, #9e927b, #b1a58b);
+  background: linear-gradient(to bottom, #806042, #ffd8a8);
   /* border: 1px solid #ffe8cc; */
-  color: white;
+  color: #343a40;
+  font-weight: bold;
 }
 
 #btn-ftr:hover,
@@ -128,7 +186,7 @@ header {
 #in-id {
   background: linear-gradient(to top, #9e927b, #b1a58b);
   border: none;
-  border-radius: 20%;
+  border-radius: 40%;
 }
 #gt-id {
   border-radius: 40%;
@@ -148,9 +206,7 @@ header {
 
 /* **************************** */
 
-#container {
-  text-align: center;
-}
+/* Typing and erase text style */
 
 #text {
   display: inline-block;
