@@ -1,6 +1,6 @@
 <h1> Homepage created with JavaScript / CSS / HTML / Bootstrap. </h1>
 
-<h2> Livepreview -  Check it ! 🖱️ http://homepage-geels.netlify.app </h2>
+<h2> Livepreview -  Check it ! 🖱️ www.geels.ovh </h2>
 
 ![image](https://github.com/Pszkudlarek07/HomePage/assets/143716328/e94cfc58-b1f9-4dea-9e4e-e46759ef54bc)
 
